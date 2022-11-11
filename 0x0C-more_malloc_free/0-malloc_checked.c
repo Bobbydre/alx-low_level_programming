@@ -1,14 +1,10 @@
-#include<string.h>
-#include "main.h"
-#include <stdlib.h>
-#include <stdio.h>
-/**
-* _isdigit - checks if character is digit
-* @c: the character to check
-*
-* Return: 1 if digit, 0 otherwise
-*/
-int _isdigit(int c)
-{
-		return (c >= '0' && c <= '9');
-}
+#ifndef MAIN_H
+#define MAIN_H
+
+void *malloc_checked(unsigned int b);
+char *string_nconcat(char *s1, char *s2, unsigned int n);
+void *_calloc(unsigned int nmemb, unsigned int size);
+int *array_range(int min, int max);
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
+
+#endif
